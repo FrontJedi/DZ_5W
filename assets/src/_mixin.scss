@@ -1,0 +1,25 @@
+@mixin size($width, $height) {
+    width: $width;
+    height: $height;
+}
+
+@mixin df-position($justify-content, $align-items) {
+    display: flex;
+    justify-content: $justify-content;
+    align-items: $align-items;
+}
+
+@mixin m-position($mt, $ml) {
+    margin-top: $mt;
+    margin-left: $ml;
+}
+
+@mixin p-position($pt, $pl) {
+    padding-top: $pt;
+    padding-left: $pl;
+}
+
+@mixin a-position ($top, $left){
+    top: $top;
+    left: $left;
+}

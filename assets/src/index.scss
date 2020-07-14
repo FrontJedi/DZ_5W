@@ -1,0 +1,13 @@
+@import "reset.scss";
+@import "mixin.scss";
+@import "header.scss";
+@import "results.scss";
+@import "filter.scss";
+
+.app {
+    @include size(1140px, 566);
+    background: #ffffff;
+    padding: 35px 15px;
+    margin: 50px auto;
+    border: 2px solid red;
+}

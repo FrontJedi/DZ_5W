@@ -1,0 +1,45 @@
+.results__box {
+    @include df-position(space-between, center);
+    margin: 45px 0 0 0;
+    @include size(855px, 25px);
+
+    .result {
+        @include df-position(center, center);
+        @include size(90px, 20px);
+        background: #d6c9d8;
+        border-radius: 5px;
+
+        & > p {
+            font-family: "Poppins";
+            font-style: normal;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 1.5;
+            border-radius: 5px;
+        }
+    }
+
+    .total {
+        background: #d6c9d8;
+
+        & > p {
+            color: #5231ae;
+        }
+    }
+
+    .success {
+        background: #9aeebb;
+
+        & > p {
+            color: #169357;
+        }
+    }
+
+    .pending {
+        background: #f1b1b1;
+
+        & > p {
+            color: #de3838;
+        }
+    }
+}
