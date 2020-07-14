@@ -1,0 +1,54 @@
+.inform {
+    min-height: 100px;
+    height: 100%;
+
+    &-item {
+        display: flex;
+        margin: 25px 0;
+
+        &__task {
+            max-width: 690px;
+            width: 100%;
+        }
+
+        &__priority {
+            position: relative;
+            max-width: 180px;
+            width: 100%;
+
+            &-color {
+                position: absolute;
+                content: "";
+                @include size(10px, 10px);
+                @include a-position(0, -25px);
+                border-radius: 50%;
+            }
+
+            .color1 {
+                background: #4764c9;
+            }
+
+            .color2 {
+                background: #d10c0c;
+            }
+
+            .color3 {
+                background: #f1ae00;
+            }
+        }
+
+        &__date {
+            margin-left: 30px;
+        }
+
+        &__checkbox {
+            margin-left: 60px;
+        }
+
+        &__delete-img {
+            margin-left: 25px;
+            border: none;
+            background-color: #ffffff;
+        }
+    }
+}

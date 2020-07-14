@@ -3,11 +3,16 @@
 @import "header.scss";
 @import "results.scss";
 @import "filter.scss";
+@import "inform.scss";
+@import "footer.scss";
 
 .app {
-    @include size(1140px, 566);
+    max-width: 1140px;
+    width: 100%;
     background: #ffffff;
     padding: 35px 15px;
     margin: 50px auto;
     border: 2px solid red;
 }
+
+

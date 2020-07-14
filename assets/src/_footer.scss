@@ -1,0 +1,22 @@
+.footer {
+    @include df-position(space-between, center);
+    margin-top: 170px;
+
+    &__btn-clear {
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 1.5;
+        color: #4dc97e;
+    }
+
+    &__add-new {
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 1.5;
+        color: #dc5252;
+    }
+}

@@ -15,8 +15,13 @@
     &::after {
         content: "";
         position: absolute;
-        @include size(100%, 5px);
+        @include size(100%, 2px);
         @include a-position(50px, 0);
         background: #9AEEBB;
+    }
+
+    .btn-img{
+        border: none;
+        background-color: #ffffff;
     }
 }
