@@ -1,7 +1,7 @@
 .filter__box {
     position: relative;
     @include df-position(space-between, center);
-    margin-top: 10px;
+    margin-top: 30px;
 
     .filter {
         font-family: "Poppins";
@@ -10,18 +10,21 @@
         font-size: 36px;
         line-height: 54px;
         color: #b92121;
+        background: #f5f4f4;
+        border: none;
+        width: 100%;
     }
 
     &::after {
         content: "";
         position: absolute;
         @include size(100%, 2px);
-        @include a-position(50px, 0);
-        background: #9AEEBB;
+        @include a-position(55px, 0);
+        background: #9aeebb;
     }
 
-    .btn-img{
+    .btn-img {
         border: none;
-        background: #f5f4f4;
+        background: include;
     }
 }

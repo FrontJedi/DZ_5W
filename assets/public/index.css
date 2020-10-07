@@ -43,7 +43,7 @@ blockquote, q {
 
 blockquote:before, blockquote:after,
 q:before, q:after {
-  content: "";
+  content: '';
   content: none;
 }
 
@@ -55,13 +55,20 @@ table {
 *,
 *::after,
 *::before {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .header__todolist > p {
   font-family: "Poppins";
@@ -74,17 +81,29 @@ table {
 }
 
 .results__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: 45px 0 0 0;
   width: 855px;
   height: 25px;
 }
 .results__box .result {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 90px;
   height: 20px;
   background: #d6c9d8;
@@ -119,10 +138,16 @@ table {
 
 .filter__box {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 10px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 30px;
 }
 .filter__box .filter {
   font-family: "Poppins";
@@ -131,19 +156,22 @@ table {
   font-size: 36px;
   line-height: 54px;
   color: #b92121;
+  background: #f5f4f4;
+  border: none;
+  width: 100%;
 }
 .filter__box::after {
   content: "";
   position: absolute;
   width: 100%;
   height: 2px;
-  top: 50px;
+  top: 55px;
   left: 0;
-  background: #9AEEBB;
+  background: #9aeebb;
 }
 .filter__box .btn-img {
   border: none;
-  background: #f5f4f4;
+  background: include;
 }
 
 .inform {
@@ -151,6 +179,8 @@ table {
   height: 100%;
 }
 .inform-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin: 25px 0;
 }
@@ -192,11 +222,20 @@ table {
   border: none;
   background: #f5f4f4;
 }
+.inform-item__mark {
+  border: none;
+}
 
 .footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-top: 170px;
 }
 .footer__btn-clear {
@@ -206,6 +245,7 @@ table {
   font-size: 18px;
   line-height: 1.5;
   color: #4dc97e;
+  padding: 5px 0;
 }
 .footer__add-new {
   font-family: "Poppins";
@@ -224,3 +264,5 @@ table {
   padding: 35px 15px;
   margin: 50px auto;
 }
+
+/*# sourceMappingURL=index.css.map */
